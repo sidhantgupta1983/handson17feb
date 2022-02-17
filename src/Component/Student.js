@@ -12,7 +12,7 @@ const Student = () => {
         <>
             <h1>This is a student page</h1>
             <h2>The student is {students.map((item) => {
-                if(item.id==value.stuId){
+                if(item.id===Number(value.stuId)){
                 return (<>{item.name}</>)
             }})}</h2>
             <Link to='/home'>Home</Link>
